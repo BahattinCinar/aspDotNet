@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>115ceb68-060c-4246-bc2c-c72a52bae84d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aspDotNet.BusiniessLayer\aspDotNet.BusiniessLayer.csproj" />
+    <ProjectReference Include="..\aspDotNet.DataAccsessLayer\aspDotNet.DataAccsessLayer.csproj" />
+    <ProjectReference Include="..\aspDotNet.EntityLayer\aspDotNet.EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>

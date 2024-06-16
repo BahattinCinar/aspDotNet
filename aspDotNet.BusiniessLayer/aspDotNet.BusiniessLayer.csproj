@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\aspDotNet.DataAccsessLayer\aspDotNet.DataAccsessLayer.csproj" />
+    <ProjectReference Include="..\aspDotNet.EntityLayer\aspDotNet.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>

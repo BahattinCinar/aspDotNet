@@ -19,4 +19,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\appRoleDtos\" />
+    <Folder Include="Dtos\CustommerAccountDtos\" />
+    <Folder Include="Dtos\CustommerAccountProcessDtos\" />
+  </ItemGroup>
+
 </Project>
