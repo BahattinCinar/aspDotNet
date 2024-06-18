@@ -1,7 +1,12 @@
+using aspDotNet.EntityLayer.Concrate;
+using aspDotNet.DataAccsessLayer.Concrate;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<Context>();
+builder.Services.AddIdentity<appUser, appRole>().AddEntityFrameworkStores<Context>();
 
 var app = builder.Build();
 
@@ -18,6 +23,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

@@ -25,4 +25,8 @@
     <ProjectReference Include="..\aspDotNet.EntityLayer\aspDotNet.EntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EntityFramework\" />
+  </ItemGroup>
+
 </Project>
