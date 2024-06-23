@@ -1,6 +1,6 @@
-﻿@model appUserRegisterDto
+﻿@model loginViewModel
 @{
-    Layout = null;
+	Layout = null;
 }
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <!-- Head -->
 <head>
 
-	<title>Existing Login Form a Flat Responsive Widget Template :: W3layouts</title>
+	<title>Asp.Net Giris Sayfasi</title>
 
 	<!-- Meta-Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,64 +26,39 @@
 	<!-- Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 	<!-- //Fonts -->
-	
+
 
 </head>
 <!-- //Head -->
 <!-- Body -->
 <body>
 
-	<h1>Asp.Net Kayit formu</h1>
+	<h1>Asp.Net Giris formu</h1>
 
 	<div class="w3layoutscontaineragileits">
 		<h2>Giris</h2>
 		<form method="post">
 			<div class="form-sub-w3ls">
-				<input placeholder="Adiniz" asp-for="dtoName" type="text" required="">
+				<input placeholder="Adiniz" asp-for="Username" type="text" required="">
 				<div class="icon-agile">
 					<i class="fa fa-user" aria-hidden="true"></i>
 				</div>
 			</div>
 			<div class="form-sub-w3ls">
-				<input placeholder="Soy Adiniz" asp-for="dtoSurname" type="text" required="">
-				<div class="icon-agile">
-					<i class="fa fa-user" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="form-sub-w3ls">
-				<input placeholder="Kullanici Adiniz" asp-for="dtoUserName" type="text" required="">
-				<div class="icon-agile">
-					<i class="fa fa-user" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="form-sub-w3ls">
-				<input placeholder="Email" class="mail" asp-for="dtoEmail" type="email" required="">
-				<div class="icon-agile">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="form-sub-w3ls">
-				<input placeholder="Sifreniz" asp-for="dtoPassword" type="password" required="">
-				<div class="icon-agile">
-					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="form-sub-w3ls">
-				<input placeholder="Sifrenizi Tekrar Giriniz" asp-for="dtoConfirmPassword" type="password" required="">
+				<input placeholder="Sifreniz" asp-for="Password" type="password" required="">
 				<div class="icon-agile">
 					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
 				</div>
 			</div>
 			<div class="aitssendbuttonw3ls">
-				<input type="submit" value="Kayit Ol">
-				<p> Hesabiniz Var Mi ? <span>→</span> <a class="w3_play_icon1" href="/Login/Index/">  Hemen Giris Yapin</a></p>
+				<input type="submit" value="Giris Yap">
+				<p> Hesabiniz Yok Mu ? <span>→</span> <a href="~/Register/Index/">  Hemen Kayit Olun</a></p>
 				<div class="clear"></div>
 			</div>
-			<div class="text-white" asp-validation-summary="ModelOnly"></div>
 		</form>
 	</div>
 
-	
+
 	<script type="text/javascript" src="~/register/js/jquery-2.1.4.min.js"></script>
 
 	<!-- pop-up-box-js-file -->
