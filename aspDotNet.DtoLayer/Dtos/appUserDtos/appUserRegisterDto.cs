@@ -25,5 +25,9 @@ namespace aspDotNet.DtoLayer.Dtos.appUserDtos
         public string dtoPassword { get; set; }
 
         public string dtoConfirmPassword { get; set; }
+
+        public int dtoDistrict {  get; set; }
+
+        public int dtoCity { get; set; }
     }
 }

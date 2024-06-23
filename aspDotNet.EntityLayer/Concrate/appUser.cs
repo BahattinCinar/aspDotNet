@@ -20,6 +20,8 @@ namespace aspDotNet.EntityLayer.Concrate
 
         public string appUserImageUrl { get; set; }
 
+        public int appUserConfirmCode { get; set; }
+
         public List<CustommerAccount> CustommerAccounts { get; set; }
     }
 }

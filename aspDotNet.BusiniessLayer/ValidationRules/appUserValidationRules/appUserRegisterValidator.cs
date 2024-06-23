@@ -19,7 +19,7 @@ namespace aspDotNet.BusiniessLayer.ValidationRules.AppUserValidationRules
             RuleFor(x => x.dtoPassword).NotEmpty().WithMessage("Sifre kismi bos gecilemez");
             RuleFor(x => x.dtoConfirmPassword).NotEmpty().WithMessage("Sifreyi tekrarlayiniz");
 
-            RuleFor(x => x.dtoPassword).MinimumLength(7).WithMessage("Minimum uzunluk 7 olmalidir");
+            RuleFor(x => x.dtoPassword).MinimumLength(6).WithMessage("Minimum uzunluk 6 olmalidir");
             RuleFor(x=>x.dtoConfirmPassword).Equal(y=> y.dtoPassword).WithMessage("Parolalar ayni degil");
             RuleFor(x => x.dtoEmail).EmailAddress().WithMessage("Lutfen Gecerli bir mail adresi giriniz");
         }
